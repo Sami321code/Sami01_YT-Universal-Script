@@ -1,11 +1,11 @@
--- Sami's Universal Script
+-- Sami01_YT Universal Script
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Sami's Universal Script", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Sami01_YT Universal Script", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 
--- player tab
+-- Player tab
 
 local PlayerTab = Window:MakeTab({
  Name = "Player",
@@ -96,5 +96,40 @@ local OtherTab = Window:MakeTab({
     Name = "Unfair-Hub",
     Callback = function()
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua'),true))()
+    end
+   })
+
+   OtherTab:AddButton({
+    Name = "Universal Car Mod",
+    Callback = function()
+        loadstring(game:HttpGet("https://paste.ee/r/YVEG0", true))()
+    end
+   })
+
+   OtherTab:AddButton({
+    Name = "Universal Soft Aim",
+    Callback = function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/zWRPwbP3'))()
+    end
+   })
+
+   OtherTab:AddButton({
+    Name = "Universal Aimbot",
+    Callback = function()
+        loadstring(game:HttpGet"https://gitlab.com/te4224/Scripts/-/raw/main/Universal%20Aimbot%20N%20Esp/v2/main.lua")();
+    end
+   })
+
+   OtherTab:AddButton({
+    Name = "Universal Aimbot AimWare",
+    Callback = function()
+        loadstring(game:HttpGet"https://raw.githubusercontent.com/Wheeleee/AIMWARE/main/Startup")()
+    end
+   })
+
+   OtherTab:AddButton({
+    Name = "Universal Trolling",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Dvrknvss/UniversalFEScriptHub/main/Script'))()
     end
    })
