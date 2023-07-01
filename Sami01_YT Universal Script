@@ -1,0 +1,100 @@
+-- Sami's Universal Script
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Sami's Universal Script", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+
+-- player tab
+
+local PlayerTab = Window:MakeTab({
+ Name = "Player",
+ Icon = "rbxassetid://4483345998",
+ PremiumOnly = false
+})
+
+local Section = PlayerTab:AddSection({
+ Name = "Movement"
+})
+
+PlayerTab:AddSlider({
+ Name = "Walkspeed",
+ Min = 16,
+ Max = 500,
+ Default = 16,
+ Color = Color3.fromRGB(255,255,255),
+ Increment = 1,
+ ValueName = "WS",
+ Callback = function(Value)
+  game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+ end    
+})
+
+PlayerTab:AddSlider({
+ Name = "Jump Height",
+ Min = 16,
+ Max = 500,
+ Default = 5,
+ Color = Color3.fromRGB(255,255,255),
+ Increment = 1,
+ ValueName = "Height",
+ Callback = function(Value)
+  game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+ end    
+})
+
+
+--Universal Scripts
+
+local OtherTab = Window:MakeTab({
+    Name = "Other",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+   })
+   
+   local Section = OtherTab:AddSection({
+    Name = "Uniersal Scripts"
+   })
+   
+   
+   OtherTab:AddButton({
+    Name = "Infinite Yield",
+    Callback = function()
+        local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/zCxufTh5'))()
+    end
+   })
+   
+   OtherTab:AddButton({
+    Name = "Owl-Hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+    end
+   })
+   
+   OtherTab:AddButton({
+    Name = "VG-Hub",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+    end
+   })
+
+   OtherTab:AddButton({
+    Name = "Dark-Hub",
+    Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub_V4/main/init", true))() 
+    end
+   })
+
+   OtherTab:AddButton({
+    Name = "Wheat-Hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/MaGiXxScripter0/wheathub/main/universal.lua"))()
+    end
+   })
+
+   OtherTab:AddButton({
+    Name = "Unfair-Hub",
+    Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua'),true))()
+    end
+   })
