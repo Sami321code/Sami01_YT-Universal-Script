@@ -2,7 +2,7 @@
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Sami01_YT Universal Script", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Sami's Universal Script", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 
 -- Player tab
@@ -131,5 +131,20 @@ local OtherTab = Window:MakeTab({
     Name = "Universal Trolling",
     Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/Dvrknvss/UniversalFEScriptHub/main/Script'))()
+    end
+   })
+
+   OtherTab:AddButton({
+    Name = "Universal Hydroxide",
+    Callback = function()
+        local owner = "Upbolt"
+local branch = "revision"
+
+local function webImport(file)
+    return loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/%s/Hydroxide/%s/%s.lua"):format(owner, branch, file)), file .. '.lua')()
+end
+
+webImport("init")
+webImport("ui/main")
     end
    })
