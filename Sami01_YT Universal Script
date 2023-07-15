@@ -148,3 +148,7 @@ webImport("init")
 webImport("ui/main")
     end
    })
+
+   OrionLib:Init()
+
+   OrionLib:Destroy()
