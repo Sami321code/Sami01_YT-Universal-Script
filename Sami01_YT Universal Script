@@ -116,7 +116,7 @@ local OtherTab = Window:MakeTab({
    OtherTab:AddButton({
     Name = "Universal Aimbot",
     Callback = function()
-        loadstring(game:HttpGet"https://gitlab.com/te4224/Scripts/-/raw/main/Universal%20Aimbot%20N%20Esp/v2/main.lua")();
+        loadstring(game:HttpGet"https://gitlab.com/te4224/Scripts/-/raw/main/Universal%20Aimbot%20N%20Esp/v2/main.lua")()
     end
    })
 
