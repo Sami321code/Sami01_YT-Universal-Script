@@ -60,7 +60,7 @@ local OtherTab = Window:MakeTab({
    OtherTab:AddButton({
     Name = "Infinite Yield",
     Callback = function()
-        local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/zCxufTh5'))()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
     end
    })
    
