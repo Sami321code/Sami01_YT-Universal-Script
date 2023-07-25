@@ -149,7 +149,14 @@ local OtherTab = Window:MakeTab({
    })
 
    OtherTab:AddButton({
-    Name = "HitBox Expander",
+    Name = "Audio Spammer Universal",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Sami321code/Universal-Spam-Audio/main/Universal%20Spam%20Audio%20Roblox"))()
+    end
+   })
+
+   OtherTab:AddButton({
+    Name = "Universal HitBox Expander",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Vcsk/RobloxScripts/main/HitboxExpander.lua"))()
     end
